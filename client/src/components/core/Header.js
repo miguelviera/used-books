@@ -17,14 +17,14 @@ const Header = () => {
   return (
       <div className="Header">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <Link className="navbar-brand" to="/" >UsedBooks</Link>
+          <Link className="navbar-brand" to="/used-books/" >UsedBooks</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/" >Home</Link>
+                <Link className="nav-link" to="/used-books/" >Home</Link>
               </li>
               {
                 isAuthenticated && (

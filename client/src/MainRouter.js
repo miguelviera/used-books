@@ -22,7 +22,7 @@ function MainRouter () {
             <Header />
             <div className="container-fluid">
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/used-books" component={Home}/>
                     <PrivateRoute exact path="/cart" component={Cart}/>
                     <Route exact path="/signin" component={Signin}/>
                     <Route exact path="/signup" component={Signup}/>
