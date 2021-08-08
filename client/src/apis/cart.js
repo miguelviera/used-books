@@ -1,5 +1,5 @@
 import queryString from 'query-string'
-import { baseUrl } from './config'
+import { baseUrl } from '../apis/config'
 import auth from '../auth/auth-helper'
 
 const create = async (productId, credentials) => {

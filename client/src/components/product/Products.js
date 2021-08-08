@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {list, remove} from '../../apis/product'
-import { baseUrl } from '../apis/config'
+import { baseUrl } from '../../apis/config'
 
 import auth from '../../auth/auth-helper'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { baseUrl } from '../apis/config'
+import { baseUrl } from '../../apis/config'
 
 import AddToCartButton from '../cart/AddToCartButton'
 import auth from '../../auth/auth-helper'
