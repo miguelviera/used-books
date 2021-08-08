@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {list, remove} from '../../apis/product'
+import { baseUrl } from '../apis/config'
 
 import auth from '../../auth/auth-helper'
 
@@ -49,7 +50,7 @@ const Products = () =>{
         <tbody>
           {products.map((product, i) => <tr key={i}>
                       <th scope="row">{i+1}</th>
-                      <td><img style={{width: '4em'}} src={`http://localhost:3000/api/product/image/${product._id}`} className="card-img-top" alt="..." /> </td>
+                      <td><img style={{width: '4em'}} src={`${baseUrl}/api/product/image/${product._id}`} className="card-img-top" alt="..." /> </td>
                       <td>{product.name}</td>
                       <td>{product.description}</td>
                       <td>{product.category}</td>

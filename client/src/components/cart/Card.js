@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { baseUrl } from '../apis/config'
+
 import AddToCartButton from '../cart/AddToCartButton'
 import auth from '../../auth/auth-helper'
 
@@ -9,7 +11,7 @@ const Card = ({product}) =>{
   return (
       <div className="VerticalCard card">
         <Link to={`/products/${product._id}`}>
-          <img src={`http://localhost:3000/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img-top" alt="..." />
+          <img src={`${baseUrl}/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img-top" alt="..." />
         </Link>
         <div className="card-body">
           <h5 className="card-title d-inline">{product.name}</h5>
