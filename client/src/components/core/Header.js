@@ -17,7 +17,7 @@ const Header = () => {
   return (
       <div className="Header">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <Link className="navbar-brand" to="/" >MarketPlace</Link>
+          <Link className="navbar-brand" to="/" >UsedBooks</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
