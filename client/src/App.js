@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import MainRouter from './MainRouter'
 import {listByUser} from './apis/cart'
-import './App.css';
 
 
 import {AppContext} from './Context'
