@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000'
+import { baseUrl } from '../apis/config'
 
 const signin = async (user) => {
   try {

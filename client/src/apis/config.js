@@ -1,5 +1,5 @@
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://viera-used-books.herokuapp.com'
 
 export {
     baseUrl
