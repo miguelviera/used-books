@@ -6,6 +6,8 @@ import {update, listByUser, remove, clearCart} from '../../apis/cart'
 
 import './Cart.css';
 
+import { baseUrl } from '../../apis/config'
+
 import {useAppContext} from '../../Context'
 
 const Cart = () => {
@@ -92,7 +94,7 @@ return (
                         <td className="col-sm-12">
                             <div className="media">
                                 <Link className="thumbnail pull-left" to={`/products/${element.product._id}`} > <img className="media-object" alt=""
-                                    src={`http://localhost:3000/api/product/image/${element.product._id}`}
+                                    src={`${baseUrl}/api/product/image/${element.product._id}`}
                                     style={{ width: "72px", height: "72px" }} /> </Link>
                                 <div className="media-body">
                                     <h4 className="media-heading"><a href="#"></a></h4>

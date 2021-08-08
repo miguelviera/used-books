@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import {read} from '../../apis/product'
 import AddToCartButton from '../cart/AddToCartButton'
 
+import { baseUrl } from '../../client/src/apis/config'
+
 const VerticalCard = ({id}) =>{
     const [product, setProduct] = useState({});
 
@@ -20,7 +22,7 @@ const VerticalCard = ({id}) =>{
         <div className="VerticalCard card" style={{width: "20em"}}>
             <Link to={`/products/${product._id}`} >
                 {product._id?
-                    <img src={`http://localhost:3000/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img-top" alt="..." />:
+                    <img src={`${baseUrl}/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img-top" alt="..." />:
                     <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                 }
             </Link>

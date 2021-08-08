@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import AddToCartButton from './cart/AddToCartButton'
 
+import { baseUrl } from '../../client/src/apis/config'
+
+
 const HorizontalCard = ({product}) =>{
 
     return (
@@ -10,7 +13,7 @@ const HorizontalCard = ({product}) =>{
                 
                 <div className="col-sm-12 col-md-4">
                 <Link to={`/products/${product._id}`} >
-                    <img src={`http://localhost:3000/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img" alt="..." />
+                    <img src={`${baseUrl}/api/product/image/${product._id}`} style={{height: "100%", width: "100%"}} className="card-img" alt="..." />
                 </Link>
                 </div>
                 <div className="col-sm-12 col-md-8">
